@@ -8,12 +8,13 @@ pipeline {
                 echo 'Build Stage Successful'
             }
         }
-        stage('Test') {
-            steps {
-                sh './PES2UG22CS414-1'  // Execute compiled file
-                echo 'Test Stage Successful'
-            }
-        }
+       stage('Test') {
+    steps {
+        sh './wrong_executable_name'  // Intentional error
+        echo 'Test Stage Successful'
+    }
+}
+
         stage('Deploy') {
             steps {
                 echo 'Deployment Successful'
