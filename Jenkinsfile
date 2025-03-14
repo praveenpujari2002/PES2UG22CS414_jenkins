@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh './PES2UG22CS413-1'  // Execute compiled file
+                sh './PES2UG22CS414-1'  // Execute compiled file
                 echo 'Test Stage Successful'
             }
         }
